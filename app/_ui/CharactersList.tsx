@@ -1,5 +1,11 @@
+import CharactersItem from "./CharactersItem";
+
 function CharactersList() {
-  return <div>CharatersList</div>;
+  return (
+    <div>
+      <CharactersItem />
+    </div>
+  );
 }
 
 export default CharactersList;
