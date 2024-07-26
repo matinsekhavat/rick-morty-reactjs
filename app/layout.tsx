@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={josefin.className}>
+      <body className={`${josefin.className} bg-slate-800`}>
         <div className="min-h-dvh grid grid-rows-[auto_1fr] ">
           <Header />
           <main>{children}</main>
