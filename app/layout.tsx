@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Josefin_Sans } from "next/font/google";
 import "./globals.css";
+import Header from "./_ui/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+const josefin = Josefin_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={josefin.className}>
+        <div className="min-h-dvh grid grid-rows-[auto_1fr] ">
+          <Header />
+          <main>{children}</main>
+        </div>
+      </body>
     </html>
   );
 }
