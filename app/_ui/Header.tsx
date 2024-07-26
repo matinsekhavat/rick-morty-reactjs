@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Header() {
   return (
-    <header className="h-20 container-fluid bg-slate-500 flex items-center justify-between">
+    <header className="h-20 container-fluid bg-slate-500 flex items-center justify-between my-4 rounded-xl">
       {/* Left side */}
       {/* Logo */}
       <div className="flex items-center gap-4">
