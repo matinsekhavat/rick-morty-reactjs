@@ -6,4 +6,13 @@
   .container-fluid {
     @apply w-full px-4 max-w-screen-md mx-auto;
   }
+  .circle {
+    @apply rounded-full size-3;
+  }
+  .cricle.red {
+    @apply bg-red-500;
+  }
+  .circle.green {
+    @apply bg-green-500;
+  }
 }
