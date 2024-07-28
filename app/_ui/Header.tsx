@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Input from "./Input";
 
 function Header() {
   return (
@@ -16,11 +17,7 @@ function Header() {
         </div>
         {/* Search Bar */}
         <div className=" transition-all w-auto">
-          <input
-            type="text"
-            placeholder="Search For Characters"
-            className="px-4 py-2 rounded-md outline-none border-none w-24 focus:w-52 transition-all focus:outline-4 outline-offset-0 focus:outline-slate-700"
-          />
+          <Input />
         </div>
       </div>
       <div>
